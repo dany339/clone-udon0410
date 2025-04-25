@@ -147,7 +147,7 @@
                     <div class="tabs-wrap">
                       <button class="btn-open">역전우동의 시작</button>
                       <ul class="tabs">
-                        <li data-tab="tab1">역전우동의 시작</li>
+                        <li class="active" data-tab="tab1">역전우동의 시작</li>
                         <li data-tab="tab2">역전우동 이야기</li>
                         <li data-tab="tab3">믿음직한 위생 관리</li>
                       </ul>
@@ -156,8 +156,8 @@
 
                   <div class="tab-contents">
                     <!-- text: s -->
-                    <div class="tab-content" id="tab1">
-                      <div class="sub-header history">
+                    <div class="tab-content active" id="tab1">
+                      <div class="sub_header history">
                         <div class="sub_header_text">
                           <h1>역전우동의 시작</h1>
                           <p>우리에게 맞는 우동의 맛을 연구하다</p>
@@ -214,6 +214,7 @@
                       <div class="parallax_box">
                         <div class="parallax_img_history"></div>
                       </div>
+
                       <section class="tab1-section tab1-section02">
                         <div class="container">
                           <div class="history1-col2 res-col2">
@@ -284,94 +285,159 @@
                       </div>
 
                       <section class="tab2-section tab2-section01">
-                        <div
-                          class="history2-left history2-col2-child res-col2-child"
-                        >
+                        <div class="history2-col2 res-col2">
                           <div
-                            class="swiper swiper-container2 swiper-container-horizontal"
+                            class="history2-left history2-col2-child res-col2-child"
                           >
-                            <div class="swiper-wrapper">
-                              <div
-                                class="swiper-slide"
-                                data-swiper-slide-index="2"
-                                style="width: 546px"
-                              >
-                                <img
-                                  src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide03.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="swiper-slide"
-                                data-swiper-slide-index="0"
-                                style="width: 546px"
-                              >
-                                <img
-                                  src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide01.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div
-                                class="swiper-slide"
-                                data-swiper-slide-index="1"
-                                style="width: 546px"
-                              >
-                                <img
-                                  src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide02.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
                             <div
-                              class="swiper-pagination2 swiper-pagination-clickable swiper-pagination-bullets"
+                              class="history_slide slick-initialized slick-slider slick-dotted"
                             >
-                              <span
-                                class="swiper-pagination-bullet"
-                                tabindex="0"
-                                role="button"
-                                aria-label="Go to slide 1"
-                              ></span
-                              ><span
-                                class="swiper-pagination-bullet"
-                                tabindex="0"
-                                role="button"
-                                aria-label="Go to slide 2"
-                              ></span
-                              ><span
-                                class="swiper-pagination-bullet"
-                                tabindex="0"
-                                role="button"
-                                aria-label="Go to slide 3"
-                              ></span>
+                              <button
+                                class="slick-prev slick-arrow"
+                                aria-label="Previous"
+                                type="button"
+                                style="display: inline-block"
+                              >
+                                Previous
+                              </button>
+                              <div
+                                class="slick-list draggable decoration-swiper"
+                              >
+                                <div class="slick-track swiper-wrapper">
+                                  <div
+                                    class="swiper-slide slick-slide slick-cloned"
+                                    data-slick-index="2"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                    style="width: 768px"
+                                  >
+                                    <img
+                                      src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide01.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div
+                                    class="swiper-slide slick-slide slick-cloned"
+                                    data-slick-index="0"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                    style="width: 768px"
+                                  >
+                                    <img
+                                      src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide02.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div
+                                    class="swiper-slide slick-slide slick-cloned"
+                                    data-slick-index="1"
+                                    aria-hidden="true"
+                                    tabindex="-1"
+                                    style="width: 768px"
+                                  >
+                                    <img
+                                      src="https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_slide03.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  class="swiper-pagination2 swiper-pagination-clickable swiper-pagination-bullets"
+                                >
+                                  <span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 1"
+                                  ></span
+                                  ><span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 2"
+                                  ></span
+                                  ><span
+                                    class="swiper-pagination-bullet"
+                                    tabindex="0"
+                                    role="button"
+                                    aria-label="Go to slide 3"
+                                  ></span>
+                                </div>
+                              </div>
                             </div>
-                            <span
-                              class="swiper-notification"
-                              aria-live="assertive"
-                              aria-atomic="true"
-                            ></span>
+                            <div class="swiper-pagination2"></div>
+                          </div>
+                          <div
+                            class="history2-right history2-col2-child res-col2-child"
+                          >
+                            <h2>
+                              우리에게 맞는<br />
+                              우동의 맛을 연구하다
+                            </h2>
+                            <p>
+                              역전우동의 맛을 결정하면서 단연 과제는 우리의
+                              입맛을 사로잡을 만한 맛의 지점을 찾아내는
+                              것이었습니다. 가다랑어포의 깊은 감칠맛과 우리
+                              입맛에 익숙한 육수 재료들 고유의 맛을 조화롭게
+                              아우르는 간장의 가장 맛있는 배합비를 찾아내고자
+                              수없이 많은 테스트와 시행착오를 거쳤습니다. 그렇게
+                              때로는 차분하게 면의 씹는 맛을 살리면서도,
+                              한편으로는 입에 착 감기는 감칠맛으로 긴 여운을
+                              남기는 맛의 우동 국물을 만들었습니다./p>
+                            </p>
                           </div>
                         </div>
-                        <div
-                          class="history2-right history2-col2-child res-col2-child"
-                        >
-                          <h2>우리에게 맞는 우동의 맛을 연구하다</h2>
+                      </section>
+
+                      <section class="tab2-section tab2-section02">
+                        <div class="tab2-text-box">
+                          <h2>매끄럽고 쫄깃한 면발</h2>
                           <p>
-                            역전우동의 맛을 결정하면서 단연 과제는 우리의 입맛을
-                            사로잡을 만한 맛의 지점을 찾아내는 것이었습니다.
-                            가다랑어포의 깊은 감칠맛과 우리 입맛에 익숙한 육수
-                            재료들 고유의 맛을 조화롭게 아우르는 간장의 가장
-                            맛있는 배합비를 찾아내고자 수없이 많은 테스트와
-                            시행착오를 거쳤습니다. 그렇게 때로는 차분하게 면의
-                            씹는 맛을 살리면서도, 한편으로는 입에 착 감기는
-                            감칠맛으로 긴 여운을 남기는 맛의 우동 국물을
-                            만들었습니다.
+                            맛있는 우동 면이란 입안을 매끄럽게 스치는 굵고
+                            탱탱한 면발의 탄성이 느껴지면서도, 언제든 끊을 수
+                            있도록 부드러워야 합니다. 심지어 뜨거운 국물
+                            속에서도 쉽게 붇지 않아 마지막 한 젓가락까지 처음의
+                            그 식감을 간직합니다.
+                          </p>
+                          <p>
+                            마치 마법과도 같은 이런 면을 만드는 비결은 바로
+                            단순한 재료. 역전우동0410은 밀가루, 전분, 소금만을
+                            이용한 반죽에 충분한 물을 더해 만든 우동 면을
+                            사용했습니다. 감칠맛 진한 국물에서 갓 건져 올려
+                            모락모락 맛있는 김이 서리는 우동 한 젓가락에서
+                            역전우동0410의 맛을 느낄 수 있습니다.
+                          </p>
+                        </div>
+                      </section>
+
+                      <section class="tab2-section tab2-section03">
+                        <div class="tab2-text-box">
+                          <h2>
+                            더욱 특별한<br />
+                            우리 입맛을 위한 독자적 메뉴
+                          </h2>
+                          <p>
+                            역전우동0410은 정통 일본식을 표방한 레시피를
+                            따르기보다, 우리 입맛에 잘 맞는 독자적 메뉴를
+                            개발하는 데에 더욱 큰 가치를 둡니다. 익숙한 우동
+                            국물에 매운 고추와 건새우를 더한 얼큰함으로 겨울의
+                            추위를 날리는 얼큰우동, 중독성 강한 매운맛의
+                            매콤제육덮밥, 우동 국물에 한국식 불고기 양념을 더해
+                            더욱 특별한 감칠맛을 자아내는 소불고기 우동 등이
+                            대표적인 특색 메뉴입니다.
+                          </p>
+                          <p>
+                            여기에 한 그릇으로 든든함을 선사하는 다양한 덮밥까지
+                            더해 오직 이곳에서만 맛볼 수 있는 다양한 메뉴를
+                            전하기 위해 역전우동0410은 꾸준히 연구하고, 다양한
+                            메뉴를 선보이고 있습니다.
                           </p>
                         </div>
                       </section>
                     </div>
 
                     <div class="tab-content" id="tab3">
-                      <div class="sub-header history3">
+                      <div class="sub_header history3">
                         <div class="sub_header_text">
                           <h1>믿음직한 위생 관리</h1>
                           <p>우리에게 맞는 우동의 맛을 연구하다</p>
@@ -405,6 +471,7 @@
                             </div>
                           </div>
                         </section>
+
                         <div class="parallax_box">
                           <div class="parallax_img_01"></div>
                         </div>
@@ -415,14 +482,14 @@
                           <div class="container">
                             <div class="tab3-text-box">
                               <h2>청결은 신뢰의 기본</h2>
-                              <p class="small-text">
+                              <p class="myeongjo_text">
                                 청결한 주방이야말로 모든 음식점의 기본이기에,
                                 역전우동0410은<br />
                                 주방 설비는 물론 앞치마와 모자 등 유니폼에
                                 이르기까지 모든 부분에서<br />
                                 청결을 유지하고자 노력합니다.
                               </p>
-                              <p class="myeongjo_text">
+                              <p class="small-text">
                                 뿐만 아니라 평소 손이 잘 닿지 않는 깊숙한 곳들,
                                 심지어 매장 외부의 간판까지 청결한 모습으로<br />
                                 고객 여러분을 맞이하고자 전 가맹점 대청소
@@ -431,6 +498,7 @@
                             </div>
                           </div>
                         </section>
+
                         <div class="parallax_box">
                           <div class="parallax_img_02"></div>
                         </div>
@@ -441,12 +509,12 @@
                           <div class="container">
                             <div class="tab3-text-box">
                               <h2>믿을 수 있는 식재료</h2>
-                              <p class="small-text">
+                              <p class="myeongjo_text">
                                 좋은 맛의 핵심 중 하나는 좋은 재료라는 것은<br />
                                 오늘날 많은 사람이 잘 아는 사실이고,<br />
                                 역전우동0410 역시 이를 중요한 가치로 여깁니다.
                               </p>
-                              <p class="myeongjo_text">
+                              <p class="small-text">
                                 그래서 이를 지키기 위해 안전하고 청결한 식재료
                                 상태를 유지하는 데에 청결한 주방을 유지하는
                                 것만큼이나 큰 노력을 기울입니다.<br />
@@ -456,6 +524,7 @@
                             </div>
                           </div>
                         </section>
+
                         <div class="parallax_box">
                           <div class="parallax_img_02"></div>
                         </div>

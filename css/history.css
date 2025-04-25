@@ -1,25 +1,28 @@
 @charset 'utf-8';
 
 /* HISTORY */
-.sub_heder {
+.sub_header {
   width: 100%;
   height: 500px;
   position: relative;
 }
 
-.sub-header.history {
+.sub_header.history {
   background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/sub_header_history01.png)
     center center no-repeat;
+  background-size: cover;
 }
 
-.sub-header.history2 {
+.sub_header.history2 {
   background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/sub_header_history02.png)
     center center no-repeat;
+  background-size: cover;
 }
 
-.sub-header.history3 {
+.sub_header.history3 {
   background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/sub_header_history03.png)
     center center no-repeat;
+  background-size: cover;
 }
 
 .sub_header .sub_header_text {
@@ -59,7 +62,7 @@
   padding: 60px 0 40px;
 }
 
-.history-col2 {
+.history1-col2 {
   font-size: 0;
 }
 
@@ -81,6 +84,15 @@
   line-height: 1.5;
 }
 
+#tab1 .history1-col2 h2 {
+  color: #000;
+  font-family: "KorailRound";
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 #tab1 .history1-col2 p {
   line-height: 2;
   margin-bottom: 25px;
@@ -100,4 +112,350 @@ section.tab1-section02 .history1-col2 .history1-right {
   padding: 0;
   width: 49%;
   text-align: right;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  bottom: 30px !important;
+  width: 100%;
+}
+
+.slick-dots li {
+  background-color: #d2d2d2;
+  opacity: 1;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 0;
+  margin: 0 13px 0 0;
+}
+
+.slick-dot li.slick-active {
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  margin: 0 22px 0 0;
+  position: relative;
+}
+
+.slick-dots li.slick-active::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-516px);
+  transform: translateY(-516%);
+}
+
+.ceo-cert {
+  text-align: right;
+}
+
+.parallax_box {
+  position: relative;
+}
+
+.parallax_img_history {
+  background: url(https://udon0410.com/wp-content/uploads/2018/10/history01_02.png)
+    center center repeat fixed;
+  min-height: 436px;
+}
+
+.parallax_img_01 {
+  background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_01.png)
+    center center no-repeat fixed;
+  min-height: 266px;
+}
+
+.parallax_img_02 {
+  background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_02.png)
+    center center no-repeat fixed;
+  min-height: 266px;
+}
+
+.parallax_img_03 {
+  background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_03.png)
+    center center no-repeat fixed;
+  min-height: 266px;
+}
+
+@media screen and (max-width: 767px) {
+  .sub_header .sub_header_text h1 {
+    font-size: 1.8rem;
+  }
+
+  .sub_header .sub_header_text p {
+    font-size: 0.9rem;
+  }
+
+  .history1-col2 .history1-right,
+  section.tab1-section02 .history1-col2 .history1-left {
+    width: calc(100% - 80px);
+  }
+
+  section.tab1-section02 .history1-col2 .history1-left {
+    padding: 15px 30px 50px;
+  }
+
+  #tab1 .history1-col2 h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  #tab1 .history1-col2 p {
+    font-size: 0.8rem;
+  }
+
+  .tab1-section.tab1-section02 {
+    padding: 10px 0 60px;
+  }
+
+  .history1-col2 .history1-left,
+  section.tab1-section02 .history1-col2 .history1-right {
+    width: 100%;
+  }
+
+  section.tab1-section02 .history1-col2 .history1-right {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .sub_header .sub_header_text p br {
+    display: none;
+  }
+
+  #tab1 .history1-col2 h2 {
+    font-size: 1.1rem;
+  }
+}
+
+.history2-col2 {
+  font-size: 0;
+  padding: 60px 200px 40px;
+}
+
+.history2-col2 .history2-col2-child {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.history2-col2 .history2-left {
+  width: 51%;
+  overflow: hidden;
+  position: relative;
+}
+
+.history2-col2 .history2-right {
+  width: calc(49% - 120px);
+  padding: 15px 80px 15px 40px;
+  line-height: 1.5;
+}
+
+#tab2 .history2-col2 .history2-right h2 {
+  color: #000;
+  font-family: "KorailRound";
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+#tab2 .history2-col2 .history2-right p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+#tab2 .more_btn {
+  font-size: 1rem;
+  left: calc(44% + 60px);
+}
+
+#tab2 .more_btn em {
+  color: #848484;
+}
+
+.tab2-section02 {
+  background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_01.png)
+    center center no-repeat;
+  background-size: cover;
+  height: 1080px;
+  position: relative;
+}
+
+.tab2-section03 {
+  background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_02.png)
+    center center no-repeat;
+  background-size: cover;
+  height: 1080px;
+  position: relative;
+}
+
+.tab2-section .tab2-text-box {
+  position: absolute;
+  top: 23%;
+  width: 535px;
+  height: auto;
+  color: #fff;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.tab2-section .tab2-text-box h2 {
+  margin-bottom: 20px;
+  font-family: "KorailRound";
+  line-height: 35px;
+  font-size: 25px;
+}
+
+.tab2-section .tab2-text-box p:last-child {
+  margin-top: 40px;
+}
+
+.tab2-section.tab2-section02 .tab2-text-box {
+  left: 31%;
+  transform: translateX(-50%);
+}
+
+.tab2-section.tab2-section03 .tab2-text-box {
+  left: 50.5%;
+  width: 585px;
+}
+
+.tab2-section .tab2-text-box p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  .history2-col2 {
+    padding: 60px 100px 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .history2-col2 {
+    padding: 60px 30px 40px;
+  }
+
+  .tab2-section.tab2-section02 .tab2-text-box {
+    left: 50%;
+  }
+
+  .tab2-section.tab2-section03 .tab2-text-box {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .history2-col2 .history2-left {
+    width: 100%;
+  }
+
+  .history2-col2 .history2-right {
+    width: calc(100% - 20px);
+    padding: 20px 10px;
+  }
+
+  #tab2 .history2-col2 .history2-right h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  #tab2 .history2-col2 .history2-right p {
+    font-size: 0.8rem;
+  }
+
+  .tab2-section .tab2-text-box h2 {
+    text-align: center;
+  }
+
+  .tab2-section02 {
+    height: 880px;
+  }
+
+  .tab2-section03 {
+    height: 880px;
+  }
+
+  .tab2-section .tab2-text-box {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .tab2-section.tab2-section02 .tab2-text-box,
+  .tab2-section.tab2-section03 .tab2-text-box {
+    width: 90%;
+    padding: 0 5%;
+  }
+}
+
+.tab3-section {
+  padding: 70px 0 50px;
+  line-height: 2;
+}
+
+.tab3-section:nth-child(n + 3) {
+  padding: 100px 0 40px;
+}
+
+.tab3-text-box {
+  padding-left: 15px;
+}
+
+.tab3-text-box h2 {
+  font-family: "KorailRound";
+  color: #000;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.tab3-text-box p.small-text {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.tab3-text-box p.myeongjo_text {
+  font-family: "KorailRound";
+  font-size: 1.255rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 1299px) {
+  .tab3-text-box {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab3-section {
+    padding: 40px 0;
+  }
+
+  .tab3-text-box {
+    font-size: 0.8rem;
+  }
+
+  .tab3-text-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .tab3-text-box br {
+    display: none;
+  }
 }
