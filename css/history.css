@@ -1,11 +1,6 @@
 @charset 'utf-8';
 
 /* HISTORY */
-.sub_header {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
 
 .sub_header.history {
   background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/sub_header_history01.png)
@@ -23,39 +18,6 @@
   background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/sub_header_history03.png)
     center center no-repeat;
   background-size: cover;
-}
-
-.sub_header .sub_header_text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  width: 100%;
-}
-
-.sub_header .sub_header_text h1 {
-  margin-bottom: 20px;
-  font-family: "KorailRound";
-  font-weight: normal;
-}
-
-.sub_header .sub_header_text h1::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  margin: 32px auto;
-  background: #fff;
-}
-
-.sub_header .sub_header_text p {
-  line-height: 1.5;
-}
-
-.sub_content {
-  position: relative;
 }
 
 .tab1-section {

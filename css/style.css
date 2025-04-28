@@ -83,7 +83,7 @@
 
 .main-sec1 .swiper-pagination-bullet {
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   opacity: 1;
   width: 4px;
   height: 4px;
@@ -449,18 +449,6 @@
   .sec-bottom .bottom-col2 .bottom-col2-child img {
     width: 100%;
   }
-
-  .menu-section ul.menu-box > li {
-    width: 32% !important;
-  }
-
-  .menu-section ul.menu-box > li:nth-child(4n) {
-    margin-right: 2% !important;
-  }
-
-  .menu-section ul.menu-box > li:nth-child(3n) {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -536,23 +524,6 @@
 
   .sec-bottom .bottom-col2 .bottom-col2-child .bottom-text .menu-bore-btn {
     margin-top: 15px;
-  }
-
-  .menu-section ul.main-menu-box > li {
-    width: 48% !important;
-    margin-right: 4% !important;
-  }
-
-  .menu-section ul.main-menu-box > li:nth-child(4n) {
-    margin-right: 4% !important;
-  }
-
-  .menu-section ul.main-menu-box > li:nth-child(3n) {
-    margin-right: 4% !important;
-  }
-
-  .menu-section ul.main-menu-box > li:nth-child(even) {
-    margin-right: 0% !important;
   }
 }
 

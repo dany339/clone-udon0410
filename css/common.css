@@ -10,6 +10,77 @@
 }
 
 /* FONTS */
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf)
+      format("opentype");
+}
 
 /* Korail Round - Main Font */
 @font-face {
@@ -92,6 +163,10 @@ button {
 }
 
 /* *************************** */
+html {
+  scroll-behavior: smooth;
+}
+
 .clearfix::before,
 .clearfix::after {
   display: table;
@@ -409,6 +484,7 @@ footer .brand-site select {
 }
 
 .top_btn {
+  display: block;
   width: 50px;
   height: 50px;
   border: 1px solid #797979;
@@ -422,9 +498,16 @@ footer .brand-site select {
   z-index: 999;
   cursor: pointer;
   display: none;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.top_btn.active {
+  opacity: 1;
 }
 
 .top_btn img {
+  margin-top: 10px;
   max-width: 17px;
   max-height: 10px;
 }
@@ -534,17 +617,6 @@ ul.tabs li.active {
   ul.tabs li:nth-child(2n) {
     border-left: 0;
   }
-
-  .menu-col2 .menu-col2-child {
-    width: 100%;
-  }
-
-  .menu-col2.left-image .menu-col2-child.menu-right,
-  .menu-col2.right-image .menu-col2-child.menu-left,
-  .menu-col2.right-image .menu-col2-child.menu-right {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 @media (max-width: 549px) {
@@ -568,6 +640,46 @@ ul.tabs li.active {
     margin: 0 auto;
     text-align: center;
   }
+}
+
+/* SUB HEADER */
+.sub_header {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.sub_header .sub_header_text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.sub_header .sub_header_text h1 {
+  margin-bottom: 20px;
+  font-family: "KorailRound";
+  font-weight: normal;
+}
+
+.sub_header .sub_header_text h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 32px auto;
+  background: #fff;
+}
+
+.sub_header .sub_header_text p {
+  line-height: 1.5;
+}
+
+.sub_content {
+  position: relative;
 }
 
 /* GRID SISTEM */

@@ -4,11 +4,30 @@ $("header .nav .nav-icon").click(function () {
   $("header .navbar").toggleClass("active");
 });
 
-/* TABS FUNCTION */
+/* TOP BUTTON */
+const topBtn = document.querySelector(".top_btn");
+const html = document.documentElement;
+const htmlPos = html.scrollHeight / 3.5;
 
-$(".tabs li").click(function () {
+$(".top_btn").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 400);
+  return false;
+});
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY;
+
+  if (scrollTop >= htmlPos) {
+    topBtn.classList.add("active");
+  } else {
+    topBtn.classList.remove("active");
+  }
+});
+
+/* TABS FUNCTION */
+$(".post-12 .tabs li").click(function () {
   $(".tab-content").removeClass("active");
-  $(".tabs li").removeClass("active");
+  $(".post-12 .tabs li").removeClass("active");
   $(this).addClass("active");
 
   var tabId = $(this).data("tab");

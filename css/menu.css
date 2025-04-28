@@ -1,0 +1,172 @@
+@charset 'utf-8';
+
+.sub_header.menu01 {
+  background: url(../image/menu_header01.png) center center no-repeat;
+  background-size: cover;
+}
+
+.sub_header.menu02 {
+  background: url(../image/menu_header02.png) center center no-repeat;
+  background-size: cover;
+}
+
+.sub_header.menu03 {
+  background: url(../image/menu_header03.png) center center no-repeat;
+  background-size: cover;
+}
+
+.tab-content.menu_page {
+  position: relative;
+  display: inherit;
+}
+
+.menu-section {
+  padding: 50px 0 90px;
+}
+
+.menu-section .container {
+  width: 1000px;
+}
+
+@media screen and (max-width: 999px) {
+  .menu-section .container {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+
+  .menu-section ul.menu-box > li {
+    width: 32% !important;
+  }
+  .menu-section ul.menu-box > li:nth-child(4n) {
+    margin-right: 2% !important;
+  }
+  .menu-section ul.menu-box > li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.menu-section ul.menu-box {
+  font-size: 0;
+}
+
+.menu-section ul.menu-box > li {
+  display: inline-block;
+  width: 23.5%;
+  margin-right: 2%;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+  position: relative;
+  vertical-align: top;
+}
+
+.menu-section ul.menu-box > li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.menu-section ul.menu-box > li:hover .menu-col2 .menu-col2-child {
+  color: #000;
+}
+
+.menu-col2 .menu-col2-child {
+  font-size: 15px;
+  color: #bebebe;
+  vertical-align: top;
+  line-height: 1.5;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.menu-col2 .menu-col2-child.menu-right {
+  margin-top: 10px;
+}
+
+.menu-col2 .menu-col2-child h2 {
+  color: #000;
+  font-family: "KorailRound";
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.menu-col2 .menu-col2-child p {
+  margin-top: 8px;
+  letter-spacing: -1px;
+}
+.menu-col2 .menu-col2-child .image-box {
+  border: 1px solid #ddd;
+}
+
+.menu-col2 .menu-col2-child .image-box:hover {
+  border: 1px solid #000;
+}
+
+.menu-col2 .menu-col2-child .image-box img {
+  vertical-align: middle;
+}
+
+.menu-col2 .price-box {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% + 50px);
+  color: #000;
+  font-family: "Nanum Myeongjo";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.menu-col2.right-image .price-box {
+  left: 50px;
+}
+
+ul.tabs li a {
+  display: block;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 949px) {
+  .menu-col2 .price-box {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-section ul.menu-box > li {
+    height: auto;
+  }
+
+  .menu-col2 .price-box {
+    position: unset;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  .menu-col2.right-image .menu-left {
+    float: none;
+  }
+
+  .menu-col2 .menu-col2-child.menu-right {
+    position: relative;
+  }
+
+  .menu-section ul.menu-box > li {
+    width: 48% !important;
+    margin-right: 4% !important;
+  }
+  .menu-section ul.menu-box > li:nth-child(4n) {
+    margin-right: 4% !important;
+  }
+  .menu-section ul.menu-box > li:nth-child(3n) {
+    margin-right: 4% !important;
+  }
+  .menu-section ul.menu-box > li:nth-child(even) {
+    margin-right: 0% !important;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .menu-section ul.menu-box > li {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
