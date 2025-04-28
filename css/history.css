@@ -135,13 +135,19 @@ section.tab1-section02 .history1-col2 .history1-right {
   display: inline-block;
   border-radius: 100%;
   font-size: 0;
-  margin: 0 13px 0 0;
 }
 
 .slick-dot li.slick-active {
   background-color: #fff;
   width: 16px;
   height: 16px;
+}
+
+.slick-dots li {
+  margin: 0 13px 0 0;
+}
+
+.slick-dot li.slick-active {
   margin: 0 22px 0 0;
   position: relative;
 }
@@ -191,6 +197,24 @@ section.tab1-section02 .history1-col2 .history1-right {
 }
 
 @media screen and (max-width: 767px) {
+  .parallax_img_01 {
+    background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_01.png)
+      center center no-repeat;
+    background-size: 170%;
+  }
+
+  .parallax_img_02 {
+    background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_02.png)
+      center center no-repeat;
+    background-size: 170%;
+  }
+
+  .parallax_img_03 {
+    background: url(https://udon0410.com/wp-content/uploads/2018/10/history03_03.png)
+      center center no-repeat;
+    background-size: 170%;
+  }
+
   .sub_header .sub_header_text h1 {
     font-size: 1.8rem;
   }

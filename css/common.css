@@ -562,6 +562,14 @@ ul.tabs li.active {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .image-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 /* GRID SISTEM */
 .grid_wrap {
   margin: 0 -1% 0;
