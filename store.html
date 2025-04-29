@@ -86,6 +86,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/store.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-ZH3JL3PTNH"
@@ -93,6 +94,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/store.js" defer></script>
   </head>
   <body data-rsssl="1" class="page-template-default page page-id-16">
     <header id="act_header">
@@ -217,27 +219,345 @@
                               data-gaddress
                               data-glat
                               data-glng
-                            ></tr>
-                            <!-- 오마이가쉬인 관계로 여기는 내일 작성하도록 하겠습니다 -->
+                            >
+                              <td class="td_area">경기도</td>
+                              <td class="td_shop">평택고덕에듀타운점</td>
+                              <td class="td_addr">
+                                경기 평택시 고덕로 250 (고덕동) 110호
+                              </td>
+                              <td class="td_tel">미등록</td>
+                              <td class="more"></td>
+                            </tr>
+                            <tr>
+                              <td class="sub_table" colspan="5">
+                                <div class="inner">
+                                  <div>
+                                    <img
+                                      src="./image/KakaoTalk_20250402_194842807_01.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <ul>
+                                      <li>
+                                        <span class="tit">위치</span
+                                        ><span class="txt"
+                                          >경기 평택시 고덕로 250 (고덕동)
+                                          110호</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">영업시간</span
+                                        ><span class="txt"
+                                          >11:00~21:00(L.O 20:30)</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">주차</span
+                                        ><span class="txt">상가 지하 주차</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">전화번호</span
+                                        ><span class="txt">미등록</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">휴일</span
+                                        ><span class="txt"></span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">좌석</span
+                                        ><span class="txt"
+                                          >일반 테이블 10석 / 바테이블 2석</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="tr_list"
+                              data-for="map_12864"
+                              data-gaddress
+                              data-glat
+                              data-glng
+                            >
+                              <td class="td_area">서울특별시</td>
+                              <td class="td_shop">종로3가역점점</td>
+                              <td class="td_addr">
+                                서울 종로구 종로 116-2 (종로3가)
+                              </td>
+                              <td class="td_tel">미등록</td>
+                              <td class="more"></td>
+                            </tr>
+                            <tr>
+                              <td class="sub_table" colspan="5">
+                                <div class="inner">
+                                  <div><img src="false" alt="" /></div>
+                                  <div>
+                                    <ul>
+                                      <li>
+                                        <span class="tit">위치</span
+                                        ><span class="txt"
+                                          >서울 종로구 종로 116-2
+                                          (종로3가)</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">영업시간</span
+                                        ><span class="txt"
+                                          >11:00~익일 02:00</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">주차</span
+                                        ><span class="txt">없음</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">전화번호</span
+                                        ><span class="txt">미등록</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">휴일</span
+                                        ><span class="txt">휴무 없음</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">좌석</span
+                                        ><span class="txt"
+                                          >일반 테이블 30석</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="tr_list"
+                              data-for="map_12863"
+                              data-gaddress
+                              data-glat
+                              data-glng
+                            >
+                              <td class="td_area">서울특별시</td>
+                              <td class="td_shop">이화여대점</td>
+                              <td class="td_addr">
+                                서울 서대문구 이화여대길 52 (대현동,
+                                이화여자대학교) 이화삼성국제기숙사 지하1층
+                              </td>
+                              <td class="td_tel">1234-1234</td>
+                              <td class="more"></td>
+                            </tr>
+                            <tr>
+                              <td class="sub_table" colspan="5">
+                                <div class="inner">
+                                  <div><img src="false" alt="" /></div>
+                                  <div>
+                                    <ul>
+                                      <li>
+                                        <span class="tit">위치</span
+                                        ><span class="txt">
+                                          서울 서대문구 이화여대길 52 (대현동,
+                                          이화여자대학교) 이화삼성국제기숙사
+                                          지하1층</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">영업시간</span
+                                        ><span class="txt">11:00~19:00</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">주차</span
+                                        ><span class="txt">1시간 3000원</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">전화번호</span
+                                        ><span class="txt">1234-1234</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">휴일</span
+                                        ><span class="txt">토, 일</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">좌석</span
+                                        ><span class="txt"
+                                          >일반 테이블 280석</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="tr_list"
+                              data-for="map_12806"
+                              data-gaddress
+                              data-glat
+                              data-glng
+                            >
+                              <td class="td_area">경기도</td>
+                              <td class="td_shop">용인외대점</td>
+                              <td class="td_addr">
+                                경기 용인시 처인구 모현읍 외대로 50 (왕산리) 1층
+                              </td>
+                              <td class="td_tel">031-123-4567</td>
+                              <td class="more"></td>
+                            </tr>
+                            <tr>
+                              <td class="sub_table" colspan="5">
+                                <div class="inner">
+                                  <div><img src="false" alt="" /></div>
+                                  <div>
+                                    <ul>
+                                      <li>
+                                        <span class="tit">위치</span
+                                        ><span class="txt"
+                                          >경기 용인시 처인구 모현읍 외대로 50
+                                          (왕산리) 1층</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">영업시간</span
+                                        ><span class="txt"
+                                          >11시~ 22시 ( 21시30분 라스트오더
+                                          )</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">주차</span
+                                        ><span class="txt"></span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">전화번호</span
+                                        ><span class="txt">031-123-4567</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">휴일</span
+                                        ><span class="txt"></span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">좌석</span
+                                        ><span class="txt">16석</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr
+                              class="tr_list"
+                              data-for="map_12803"
+                              data-gaddress
+                              data-glat
+                              data-glng
+                            >
+                              <td class="td_area">경기도</td>
+                              <td class="td_shop">부천신중동역점</td>
+                              <td class="td_addr">
+                                경기도 부천시 원미구 길주로 288, 1층 역전우동
+                              </td>
+                              <td class="td_tel">070-1234-5678</td>
+                              <td class="more"></td>
+                            </tr>
+                            <tr>
+                              <td class="sub_table" colspan="5">
+                                <div class="inner">
+                                  <div>
+                                    <img
+                                      src="./image/KakaoTalk_20250221_182138530_01.jpg"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <ul>
+                                      <li>
+                                        <span class="tit">위치</span
+                                        ><span class="txt"
+                                          >경기도 부천시 원미구 길주로 288, 1층
+                                          역전우동</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">영업시간</span
+                                        ><span class="txt">11:00~02:00</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">주차</span
+                                        ><span class="txt"
+                                          >식사 시 1시간 무료</span
+                                        >
+                                      </li>
+                                      <li>
+                                        <span class="tit">전화번호</span
+                                        ><span class="txt">070-1234-5678</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">휴일</span
+                                        ><span class="txt">없음</span>
+                                      </li>
+                                      <li>
+                                        <span class="tit">좌석</span
+                                        ><span class="txt"
+                                          >바테이블 10석, 테이블석 20석</span
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                         <nav class="navigation pagination" role="navigation">
                           <div class="nav-links">
                             <ul id="pagination">
-                              <li class="page-numbers" data-page="1">
-                                <a href="#">1</a>
+                              <li data-page="1">
+                                <i
+                                  class="fa fa-angle-double-left"
+                                  aria-hidden="true"
+                                ></i>
                               </li>
-                              <li class="page-numbers" data-page="2">
-                                <a href="#">2</a>
+                              <li data-page="3">
+                                <i
+                                  class="fa fa-angle-left"
+                                  aria-hidden="true"
+                                ></i>
+                              </li>
+                              <div
+                                class="prev page-numbers"
+                                id="prev_page"
+                              ></div>
+                              <li class="page-numbers" data-page="1">
+                                <a>1</a>
+                              </li>
+                              <!-- <li class="page-numbers" data-page="2">
+                                <a>2</a>
                               </li>
                               <li class="page-numbers" data-page="3">
-                                <a href="#">3</a>
+                                <a>3</a>
                               </li>
                               <li class="page-numbers" data-page="4">
-                                <a href="#">4</a>
+                                <a>4</a>
                               </li>
                               <li class="page-numbers" data-page="5">
-                                <a href="#">5</a>
+                                <a>5</a>
+                              </li> -->
+                              <div
+                                class="next page-numbers"
+                                id="next_page"
+                              ></div>
+                              <li data-page="5">
+                                <i
+                                  class="fa fa-angle-right"
+                                  aria-hidden="true"
+                                ></i>
+                              </li>
+                              <li data-page="22">
+                                <i
+                                  class="fa fa-angle-double-right"
+                                  aria-hidden="true"
+                                ></i>
                               </li>
                             </ul>
                           </div>
@@ -247,6 +567,7 @@
                     </div>
                   </div>
                   <!-- sub_section: e -->
+                  <script src="https://maps.google.com/maps/api/js?key=AIzaSyB8VRVtTdBQC1dLllg81bxx8kdNMrAZxkM"></script>
                 </div>
               </article>
             </main>
